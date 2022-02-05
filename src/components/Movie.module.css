@@ -1,0 +1,41 @@
+.movies {
+  background-color: rgba(255, 255, 255, 0.356);
+  color: white;
+  text-shadow: 1px 1px 1px rgb(197, 162, 255);
+  width: 350px;
+  height: 490px;
+  margin: 50px;
+  margin-top: 120px;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(213, 191, 255);
+  border-radius: 40px;
+  box-shadow: 0 10px 27px -5px rgba(166, 113, 235, 0.753),
+    0 8px 10px -8px rgba(202, 156, 255, 0.493),
+    0 -6px 16px 0px rgba(195, 121, 255, 0.527);
+}
+
+.img {
+  width: 170px;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  text-shadow: 2px 2px 1px mediumpurple;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  margin: 10px;
+}
+
+.runtime_rating {
+  font-weight: 600;
+}
+
+.genre {
+  padding-left: 0;
+  font-weight: 600;
+  margin: 10px auto;
+}

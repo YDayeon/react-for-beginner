@@ -12,7 +12,6 @@ function Detail() {
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
     setDetails(json.data.movie);
-    console.log(details);
     setLoading(false);
   };
   useEffect(() => {
@@ -26,7 +25,7 @@ function Detail() {
       ) : (
         <About
           bgImg={details.background_image}
-          coverImg={details.medium_cover_image}
+          coverImg={details.large_cover_image}
           title={details.title_long}
           rating={details.rating}
           genres={details.genres.join(' | ')}

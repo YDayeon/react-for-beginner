@@ -1,0 +1,33 @@
+.bgImg {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.coverImg {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  height: 70%;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255), -2px -2px 5px rgb(255, 255, 255);
+}
+
+.text_container {
+  position: absolute;
+  top: 90px;
+  left: 500px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+  text-shadow: 2px 2px black;
+}
+.container {
+  width: 850px;
+  font-size: 20px;
+}
