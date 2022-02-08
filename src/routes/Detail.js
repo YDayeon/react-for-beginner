@@ -1,7 +1,8 @@
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react/cjs/react.development';
+// import { useEffect, useState } from 'react/cjs/react.development';
 import About from '../components/About';
+import Loading from '../components/Loading';
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -21,7 +22,7 @@ function Detail() {
   return (
     <div>
       {loading ? (
-        <h1> Loading...</h1>
+        <Loading />
       ) : (
         <About
           bgImg={details.background_image}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Movie from '../components/Movie';
 import style from './Home.module.css';
+import Loading from '../components/Loading';
 function Home() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
@@ -18,7 +19,7 @@ function Home() {
   return (
     <div className={style.grid_container}>
       {loading ? (
-        <h1>Loading...</h1>
+        <Loading />
       ) : (
         <div>
           <span className={style.logo} href='#'>
