@@ -1,12 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-// import { useEffect, useState } from 'react/cjs/react.development';
 import About from '../components/About';
 import Loading from '../components/Loading';
 
 function Detail() {
   const [loading, setLoading] = useState(true);
-  const [details, setDetails] = useState();
+  const [details, setDetails] = useState({});
   const { id } = useParams();
   const getMovie = async () => {
     const json = await (
