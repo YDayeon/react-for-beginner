@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import About from '../components/About';
 import Loading from '../components/Loading';
+import styles from './Datail.module.css';
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ function Detail() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       {loading ? (
         <Loading />
       ) : (
