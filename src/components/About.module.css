@@ -8,6 +8,7 @@
 
 .coverImg {
   position: absolute;
+  display: block;
   left: 70px;
   top: 100px;
   height: 70%;
@@ -15,7 +16,8 @@
 }
 
 .text_container {
-  position: absolute;
+  position: relative;
+  display: block;
   top: 90px;
   left: 430px;
   color: white;
